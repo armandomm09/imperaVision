@@ -15,7 +15,7 @@ with mp_hands.Hands(min_detection_confidence=0.5, min_tracking_confidence=0.5) a
     # Inicializa la conexión con NetworkTables
     NetworkTables.initialize(server='roborio-5887-frc.local')  
 
-    table = NetworkTables.getTable("Vision")
+    table = NetworkTables.getTable("handValues")
 
     while cap.isOpened():
         ret, frame = cap.read()
