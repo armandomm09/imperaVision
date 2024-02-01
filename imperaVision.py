@@ -40,7 +40,7 @@ with mp_hands.Hands(min_detection_confidence=0.5, min_tracking_confidence=0.5) a
                 angle = math.degrees(math.atan2(points[4][1] - points[8][1], points[4][0] - points[8][0]))
 
                 # Normaliza el ángulo al rango [-1.00, 1.00]
-                normalized_angle = (angle / 180.0) - 0.75
+                normalized_angle = (angle / 180.0) - 0.6
 
                 # Dibuja el ángulo en la pantalla
                 cv2.putText(frame, f'Drive Velocity: {normalized_angle:.2f}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
